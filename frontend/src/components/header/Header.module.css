@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 1rem;
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(6px);
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.header h1 {
+    font-family: "Apple Chancery", serif;
+    font-size: 2.8rem;
+    color: #1E3A8A;
+    margin: 0;
+}
+
+.header h2 {
+    font-family: "Apple Chancery", serif;
+    font-size: 1.2rem;
+    color: #475569;
+    margin-top: 0.4rem;
+}
+
+@media (max-width: 400px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header h2 {
+        font-size: 1rem;
+    }
+}
