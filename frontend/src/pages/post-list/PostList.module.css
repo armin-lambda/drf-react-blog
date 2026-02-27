@@ -1,106 +1,106 @@
 .container {
-    width: 70%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .search {
-    width: 100%;
-    padding: 1rem 1.2rem;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(4px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    font-family: 'Special Elite', serif;
-    color: #1E3A8A;
-    outline: none;
-    transition: 0.25s ease;
-    margin-bottom: 2rem;
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  font-family: "Special Elite", serif;
+  color: #1e3a8a;
+  outline: none;
+  transition: 0.25s ease;
+  margin-bottom: 2rem;
 }
 
 .search::placeholder {
-    color: #64748B;
+  color: #64748b;
 }
 
 .search:focus {
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
-    background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .card {
-    padding: 1.2rem 1.4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(4px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    transition: box-shadow 0.3s ease;
+  padding: 1.2rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
 }
 
 .card:hover {
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
 
 .title {
-    width: fit-content;
-    font-family: "Apple Chancery", serif;
-    font-size: 1.6rem;
-    color: #1E3A8A;
-    text-decoration: none;
-    transition: color 0.2s ease;
+  width: fit-content;
+  font-family: "Apple Chancery", serif;
+  font-size: 1.6rem;
+  color: #1e3a8a;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .title:hover {
-    color: #2563EB;
+  color: #2563eb;
 }
 
 .date {
-    font-size: 0.9rem;
-    color: #64748B;
-    font-family: serif;
+  font-size: 0.9rem;
+  color: #64748b;
+  font-family: serif;
 }
 
 .excerpt {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #1A1A1A;
-    font-family: serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #1a1a1a;
+  font-family: serif;
 }
 
 .email {
-    font-family: "Apple Chancery", serif;
-    font-size: 14px;
-    color: #475569;
-    text-align: right;
-    opacity: 0.8;
+  font-family: "Apple Chancery", serif;
+  font-size: 14px;
+  color: #475569;
+  text-align: right;
+  opacity: 0.8;
 }
 
 @media (max-width: 768px) {
-    .container {
-        width: 100%;
-    }
+  .container {
+    width: 100%;
+  }
 
-    .title {
-        font-size: 1.4rem;
-    }
+  .title {
+    font-size: 1.4rem;
+  }
 
-    .excerpt {
-        font-size: 1rem;
-    }
+  .excerpt {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 400px) {
-    .title {
-        font-size: 1.2rem;
-    }
+  .title {
+    font-size: 1.2rem;
+  }
 
-    .excerpt {
-        font-size: 0.95rem;
-    }
+  .excerpt {
+    font-size: 0.95rem;
+  }
 }

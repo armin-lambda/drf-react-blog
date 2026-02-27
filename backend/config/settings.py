@@ -33,6 +33,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'django_admin_dracula', # Dracula Theme
+    
     # Django core apps
     'django.contrib.admin',
     'django.contrib.auth',
