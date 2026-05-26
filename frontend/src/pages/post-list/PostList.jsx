@@ -12,9 +12,7 @@ const PostList = () => {
 
   const fetchPosts = async (query = "") => {
     try {
-      const response = await axios.get(
-        `http://localhost:8000/api/blog/?search=${query}`,
-      );
+      const response = await axios.get(`http://localhost:8000/api/blog/?search=${query}`);
       setPosts(response.data);
       setLoading(false);
     } catch (error) {
@@ -43,20 +41,18 @@ const PostList = () => {
         <div className="state-box">Nothing to show...</div>
       )}
 
-      {!loading &&
-        !error &&
-        posts.map((post) => (
-          <div className={styles.card} key={post.id}>
-            <a href={`/${post.slug}`} className={styles.title}>
-              {post.title}
-            </a>
-            <span className={styles.date}>
-              Published at: {formatDateTime(post.created_at)}
-            </span>
-            <p className={styles.excerpt}>{post.body}</p>
-            <p className={styles.email}>armin.lambda@gmail.com</p>
-          </div>
-        ))}
+      {!loading && !error && posts.map((post) => (
+        <div className={styles.card} key={post.id}>
+          <a href={`/${post.slug}`} className={styles.title}>
+            {post.title}
+          </a>
+          <span className={styles.date}>
+            Published at: {formatDateTime(post.created_at)}
+          </span>
+          <p className={styles.excerpt}>{post.body}</p>
+          <p className={styles.email}>armin.lambda@gmail.com</p>
+        </div>
+      ))}
     </div>
   );
 };

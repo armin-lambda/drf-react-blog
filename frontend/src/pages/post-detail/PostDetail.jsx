@@ -14,9 +14,7 @@ const PostDetail = () => {
 
   const fetchPost = async (slug) => {
     try {
-      const response = await axios.get(
-        `http://localhost:8000/api/blog/${slug}/`,
-      );
+      const response = await axios.get(`http://localhost:8000/api/blog/${slug}/`);
       setPost(response.data);
       setLoading(false);
     } catch (error) {
@@ -33,9 +31,7 @@ const PostDetail = () => {
   if (error)
     return (
       <div className="state-box">
-        <a href="/" className={styles.back}>
-          ⟵ Back to posts
-        </a>
+        <a href="/" className={styles.back}>⟵ Back to posts</a>
         <br />
         {error}
       </div>
@@ -43,9 +39,7 @@ const PostDetail = () => {
 
   return (
     <div className={styles.container}>
-      <a href="/" className={styles.back}>
-        ⟵ Back to posts
-      </a>
+      <a href="/" className={styles.back}>⟵ Back to posts</a>
       <h1 className={styles.title}>{post.title}</h1>
       <time className={styles.date}>
         Published at: {formatDateTime(post.created_at)}
